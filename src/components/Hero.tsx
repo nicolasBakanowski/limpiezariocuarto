@@ -15,12 +15,6 @@ export function Hero() {
           >
             Comprar ahora
           </a>
-          <a
-            href="https://wa.me/XXXXXXXXXXX"
-            className="px-6 py-2 rounded border border-teal-600 text-teal-600 hover:bg-teal-50"
-          >
-            Contactar por WhatsApp
-          </a>
         </div>
         <div
           className="mx-auto w-32 h-32 bg-white rounded-full shadow-inner"
