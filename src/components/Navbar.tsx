@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Instagram, MessageCircle } from "lucide-react";
+import { Instagram } from "lucide-react";
 
 export function Navbar() {
   return (
@@ -32,24 +32,14 @@ export function Navbar() {
           </li>
           <li>
             <a
-              href="https://www.instagram.com/limpiezariocuarto"
+              href="https://www.instagram.com/limpieza_rioiv/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="hover:text-teal-200"
+              className="hover:text-teal-200 flex items-center gap-1"
             >
               <Instagram className="w-5 h-5" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://wa.me/3584394662"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="WhatsApp"
-              className="hover:text-teal-200"
-            >
-              <MessageCircle className="w-5 h-5" />
+              <span>@limpieza_rioiv</span>
             </a>
           </li>
         </ul>
