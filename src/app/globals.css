@@ -24,3 +24,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.bidon-card {
+  clip-path: polygon(15% 0, 85% 0, 100% 25%, 100% 100%, 0 100%, 0 25%);
+}
