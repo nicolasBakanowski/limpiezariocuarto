@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function Hero() {
   return (
     <section className="bg-teal-100 py-16">
@@ -15,17 +17,20 @@ export function Hero() {
           >
             Comprar ahora
           </a>
-          <a
-            href="https://wa.me/XXXXXXXXXXX"
-            className="px-6 py-2 rounded border border-teal-600 text-teal-600 hover:bg-teal-50"
-          >
-            Contactar por WhatsApp
-          </a>
         </div>
-        <div
-          className="mx-auto w-32 h-32 bg-white rounded-full shadow-inner"
-          aria-hidden
-        />
+
+        {/* Contenedor del ícono y círculo */}
+        <div className="relative mx-auto w-60 h-60">
+          {/* Ícono PNG encima */}
+          <Image
+            src="/iconoRIO.png"
+            alt="Icono RIO"
+            fill
+            className="object-contain -top-12 absolute"
+          />
+          {/* Círculo */}
+          <div className="w-60 h-60 bg-white rounded-full shadow-inner" />
+        </div>
       </div>
     </section>
   );
