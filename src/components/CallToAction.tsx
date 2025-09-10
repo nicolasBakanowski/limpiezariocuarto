@@ -18,7 +18,7 @@ export function CallToAction() {
               Comprar ahora
             </a>
             <a
-              href="https://wa.me/XXXXXXXXXXX"
+              href="https://wa.me/3584394662"
               className="px-6 py-2 rounded border border-white hover:bg-white hover:text-teal-600"
             >
               Contactar por WhatsApp
