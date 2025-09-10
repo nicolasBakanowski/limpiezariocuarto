@@ -5,18 +5,26 @@ import { About } from "@/components/About";
 import { CallToAction } from "@/components/CallToAction";
 import { Footer } from "@/components/Footer";
 
-const products = [
+const promotions = [
   {
-    title: "Bidón de limpiador",
-    description: "Ideal para grandes superficies y uso profesional.",
+    title: "Kit de limpieza total",
+    products: [
+      "Bidón de limpiador",
+      "Balde plástico",
+      "Limpiador multiuso",
+    ],
   },
   {
-    title: "Balde plástico",
-    description: "Resistente, fácil de transportar y con excelente capacidad.",
+    title: "Accesorios esenciales",
+    products: ["Esponja", "Guantes", "Paños de microfibra"],
   },
   {
-    title: "Limpiador multiuso",
-    description: "Eficaz en vidrios, pisos y muebles.",
+    title: "Combo profesional",
+    products: [
+      "Bidón de limpiador",
+      "Limpiador multiuso",
+      "Cepillo industrial",
+    ],
   },
 ];
 
@@ -25,7 +33,7 @@ export default function Home() {
     <div className="font-sans text-gray-900">
       <Hero />
       <Features />
-      <FeaturedProducts products={products} />
+      <FeaturedProducts promotions={promotions} />
       <About />
       <CallToAction />
       <Footer />

@@ -1,15 +1,15 @@
 import { PromotionCard } from "@/components/PromotionCard";
 
-interface Product {
+interface Promotion {
   title: string;
-  description: string;
+  products: string[];
 }
 
 interface FeaturedProductsProps {
-  products: Product[];
+  promotions: Promotion[];
 }
 
-export function FeaturedProducts({ products }: FeaturedProductsProps) {
+export function FeaturedProducts({ promotions }: FeaturedProductsProps) {
   return (
     <section id="productos" className="bg-gray-50 py-16">
       <div className="max-w-5xl mx-auto px-4">
@@ -17,11 +17,11 @@ export function FeaturedProducts({ products }: FeaturedProductsProps) {
           Productos destacados
         </h2>
         <div className="grid gap-8 md:grid-cols-3">
-          {products.map((product) => (
+          {promotions.map((promotion) => (
             <PromotionCard
-              key={product.title}
-              title={product.title}
-              description={product.description}
+              key={promotion.title}
+              title={promotion.title}
+              products={promotion.products}
             />
           ))}
         </div>
