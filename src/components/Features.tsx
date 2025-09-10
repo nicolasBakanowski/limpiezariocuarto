@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Features() {
   return (
-    <section className="py-16 bg-teal-100">
+    <section id="features" className="py-16 bg-teal-100">
       <div className="max-w-5xl mx-auto px-4 grid gap-8 md:grid-cols-3 text-center">
         {/* Feature 1 */}
         <div>
